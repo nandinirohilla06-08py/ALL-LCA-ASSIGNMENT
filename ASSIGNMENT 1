@@ -1,7 +1,7 @@
 INPUT:
 # Creating a dictionary of students
 student_dictionary = {
-  "name":"Yashika
+  "name":"Yashika",
   "age": 16,
   "grade": "10"
 }
