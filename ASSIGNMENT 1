@@ -1,1 +1,63 @@
+INPUT:
+# Creating a dictionary of students
+student_dictionary = {
+  "name":"Yashika
+  "age": 16,
+  "grade": "10"
+}
+ 
+# Add
+student_dictionary ["city"] = "Mumbai"
 
+# Update
+student_dictionary["age"] = 17
+
+# Delete
+del student_dictionary["grade"]
+
+print(student_dictionary)
+
+OUTPUT:
+{'name': 'Yashika', 'age': 17, 'city': 'Mumbai'}
+
+INPUT:
+# Tuple of students
+student_tuple = ("Yashika", "Mira", "Raghav")
+
+# Convert tuple to list
+student_list = list(student_tuple)
+
+# Add
+student_list.append( "Sudha")
+
+# Update
+student_list[1] = "Ajay"
+
+# Delete
+student_list.remove("Yashika")
+
+# Convert List back to tuple
+student_tuple2 = tuple(student_list)
+
+print(student_tuple2)
+
+OUTPUT:
+('Ajay', 'Raghav', 'Sudha')
+
+INPUT:
+# List of students
+student_list = ["Shwetank", "Joanne", "Ishika"]
+
+# Add
+student_list.append( "Naina")
+
+# Update
+student_list[0] = "Rajasi"
+
+# Delete
+student_list.remove("Rajasi")
+
+print(student_list)
+
+OUTPUT:
+['Joanne', 'Ishika', 'Naina']
