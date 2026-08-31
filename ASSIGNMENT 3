@@ -1,0 +1,40 @@
+INPUT:
+# Accept three sides
+a = float(input("Enter first side: "))
+b = float(input("Enter second side: "))
+c = float(input("Enter third side: "))
+
+
+# Find the largest side
+if a > b and a > c:
+    hypotenuse = a
+    side1, side2 = b, c
+
+elif b > a and b > c:
+    hypotenuse = b
+    side1, side2 = a, c
+
+else:
+    hypotenuse = c
+    side1, side2 = a, b
+
+
+# Function to check right-angled triangle
+def check_right_triangle(hypotenuse, side1, side2):
+    if hypotenuse ** 2 == side1 ** 2 + side2 ** 2:
+        return True
+    else:
+        return False
+
+
+# Check the triangle
+if check_right_triangle(hypotenuse, side1, side2):
+    print("The triangle is a right-angled triangle.")
+else:
+    print("The triangle is not a right-angled triangle.")
+
+OUTPUT:
+Enter first side:  12
+Enter second side:  35
+Enter third side:  37
+The triangle is a right-angled triangle.
